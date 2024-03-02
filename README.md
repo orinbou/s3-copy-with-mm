@@ -27,7 +27,7 @@ Amazon S3 file copy with multi-thread &amp; multipart sample.
 
 # Appendix.
 
-## How to make big test data file for Windows
+## How to make big test data file in Windows
 
 ```
 fsutil file createnew bigfile_001mb 1048576
