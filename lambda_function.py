@@ -120,6 +120,9 @@ def lambda_handler(event, context):
         contentLength = src_res_head_object["ContentLength"]
         print_log("ContentLength : : ", contentLength)
 
+        # ユーザー定義のメタデータ追加付与
+        src_metadata["add"] = "metadata"
+
         # オブジェクトコピー
         #s3c.copy_object(CopySource=copy_source, Bucket=tgt_bucket_name, Key=cpy_object_name)
         #s3r.meta.client.copy(copy_source, tgt_bucket_name, cpy_object_name)
