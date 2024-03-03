@@ -1,5 +1,6 @@
 import json
 import boto3
+import platform
 from time import sleep
 from concurrent.futures import ThreadPoolExecutor
 
@@ -77,6 +78,10 @@ def copy_with_multipart(src_bucket, src_key, target_bucket, target_key, object_s
 def lambda_handler(event, context):
 
     print_log('start')
+
+    # 動作環境確認
+    print_log("python_version : ", platform.python_version())
+    print_log("boto3.version : ", boto3.__version__)
 
     # S3バケット名
     src_bucket_name = 'sun-ada-bucket-tokyo'
