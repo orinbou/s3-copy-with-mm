@@ -9,9 +9,13 @@ Amazon S3 file copy with multi-thread &amp; multipart sample.
 * boto3.resource('s3').meta.client.copy()
 * boto3.client('s3').upload_part_copy() <- This Sample Code
 
-その結果、本サンプルが最も速くデータを転送できました。（下図）
+その結果、いずれも本サンプルが最も速くデータを転送できました。（下図）
 
-![alt text](assets/image.png)
+![alt text](assets/image-lambda-tokyo.png)
+
+当初、誤ってLambdaをバージニア北部で実行して計測してしまっていましたが、若干転送時間が短くなりましたが、傾向は同じでした。
+
+![alt text](assets/image-lambda-virginia.png)
 
 # Total Result
 
