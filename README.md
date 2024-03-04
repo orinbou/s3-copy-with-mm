@@ -1,7 +1,14 @@
 # s3-copy-with-mm
-Amazon S3 file copy with multi-thread &amp; multipart sample.
 
-# Amazon S3 cross region copy performance
+Amazon S3 ファイルをマルチスレッドかつマルチパートに高速にCopyするLambdaのサンプルコードです。
+
+# 前提条件
+
+AWS Lambdaの基本的な設定は下記のとおりです。
+
+![alt text](assets/image-lambda-settings.png)
+
+# パフォーマンス計測結果
 
 以下方式のS3クロスリージョン転送時間（東京→大阪）を計測しました。
 
@@ -17,7 +24,7 @@ Amazon S3 file copy with multi-thread &amp; multipart sample.
 
 ![alt text](assets/image-lambda-virginia.png)
 
-# Total Result
+# まとめ
 
 データ転送だけでなくタグやメタデータのCopyも含めた方式の比較結果は下表のとおりです。
 
