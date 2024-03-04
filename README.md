@@ -4,6 +4,9 @@ Amazon S3 ファイルをマルチスレッドかつマルチパートに高速�
 
 # 前提条件
 
+* python_version :  3.8.18
+* boto3.version :  1.26.90
+
 AWS Lambdaの基本的な設定は下記のとおりです。
 
 ![alt text](assets/image-lambda-settings.png)
